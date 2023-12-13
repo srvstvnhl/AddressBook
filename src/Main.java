@@ -2,26 +2,30 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        AddressBook addressBook = new AddressBook();
 
-        // Adding contacts
-        addressBook.addContact(new Contact("John", "Doe", "123 Main St", "1234567890"));
-        addressBook.addContact(new Contact("Jane", "Smith", "456 Elm St", "9876543210"));
-        addressBook.addContact(new Contact("Alice", "Johnson", "789 Oak St", "1112223334"));
+//    public static void main(String[] args) {
+//        AddressBook addressBook = new AddressBook();
+//
+//        // Adding contacts
+//        addressBook.addContact(new Contact("John", "Doe", "123 Main St", "1234567890"));
+//        addressBook.addContact(new Contact("John", "Boe", "1234 Main St", "1354567890"));
+//        addressBook.addContact(new Contact("Jane", "Smith", "456 Elm St", "9876543210"));
+//        addressBook.addContact(new Contact("Alice", "Johnson", "789 Oak St", "1112223334"));
+//
+//        // Searching by name
+//        List<Contact> searchResultByName = addressBook.searchByName("Jo");
+//        System.out.println("SEARCHED BY NAME: ");
+//        addressBook.printContacts(searchResultByName);
+//
+//        // Searching by phone number
+//        List<Contact> searchResultByPhone = addressBook.searchByPhoneNumber("1");
+//        System.out.println("SEARCHED BY Phone Number: ");
+//        addressBook.printContacts(searchResultByPhone);
+//    }
 
-        // Searching by name
-        List<Contact> searchResultByName = addressBook.searchByName("Jon");
-        addressBook.printContacts(searchResultByName);
-
-        // Searching by phone number
-        List<Contact> searchResultByPhone = addressBook.searchByPhoneNumber("1");
-        addressBook.printContacts(searchResultByPhone);
-    }
 
 
-    /*
-    NOTE: If need to use it as CLI- Application. Please use this main. Above one was for Mock Data, this one is for CLI.
+//    NOTE: If need to use it as CLI- Application. Please use this main. Above one was for Mock Data, this one is for CLI.
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -72,5 +76,5 @@ public class Main {
             }
         }
     }
-     */
+
 }
